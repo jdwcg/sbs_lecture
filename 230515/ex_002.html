@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>table tag</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Two Col</h3>
+    <table>
+        <tr>
+            <th>이름</th>
+            <th>Email</th>
+            <th colspan="2">Phone</th>
+        </tr>
+        <tr>
+            <td>홍길동</td>
+            <td>hgd@example.com</td>
+            <td>010-1234-1234</td>
+            <td>02-1234-1234</td>
+        </tr>
+    </table>
+    <h3>Two Row</h3>
+    <table>
+        <tr>
+            <th>이름:</th>
+            <td>김개똥</td>
+        </tr>
+        <tr>
+            <th>E.mail:</th>
+            <td>kim@example.com</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Phone:</th>
+            <td>010-1234-1234</td>
+        </tr>
+        <tr>
+            <td>010-0022-5446</td>
+        </tr>
+    </table>
+</body>
+</html>
