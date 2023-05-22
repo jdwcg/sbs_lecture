@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Sticky</title>
+  <style>
+    .row {
+      width: 640px;
+      background: #eee;
+      margin: 0 auto;
+    }
+    .col:nth-child(1) {
+      height: 400px;
+    }
+    .col:nth-child(2) {
+      height: 50px;
+      background: dodgerblue;
+      position: sticky;
+      top: 0;
+    }
+    .col:nth-child(3) {
+      height: 2600px;
+    }
+  </style>
+</head>
+<body>
+  <div class="row">
+    <div class="col"></div>
+    <div class="col"></div>
+    <div class="col"></div>
+  </div>
+</body>
+</html>
