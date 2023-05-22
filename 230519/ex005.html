@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>test002</title>
+    <style>
+      .menu {
+        width: 120px;
+        float: left;
+      }
+      .web {
+        width: 120px;
+        display: inline-block;
+        text-align: center;
+        padding: 24px 20px;
+        background: dodgerblue;
+        color: white;
+      }
+      .menu:hover .web + .sub_wrap .sub {
+        display: block;
+      }
+      .sub {
+        width: 120px;
+        display: inline-block;
+        text-align: center;
+        padding: 16px 20px;
+        background: #eee;
+        color: black;
+        display: none;
+      }
+      .sub:hover {
+        background: #e8e8e8;
+      }
+    </style>
+</head>
+<body>
+   <div class="menu_wrap">
+    <div class="menu">
+        <a href="#" class="web">webdesign</a>
+        <div class="sub_wrap">
+            <a href="#" class="sub">HTML</a>
+            <a href="#" class="sub">CSS</a>
+            <a href="#" class="sub">Phtoshop</a>
+            <a href="#" class="sub">illustrator</a>
+        </div>
+    </div>
+   </div>
+</body>
+</html>

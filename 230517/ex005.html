@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS select</title>
+    <style>
+        ul {
+            /* border: 3px solid blue */
+        }
+        ul li {
+            /* border: 1px solid red; */
+        }
+        ul li a {
+            /* border: 2px solid green; */
+        }
+        .foo {
+            /* background: red; */
+        }
+
+        ul li:nth-child(2) a {
+            background: tan;
+        }
+        ul li:first-child {
+            /* background: tan; */
+        }
+        ul li:last-child {
+            /* background: tan; */
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <a href="#">HTML</a>
+        </li>
+        <li>
+            <a href="#" class="foo">CSS</a>
+        </li>
+        <li>
+            <a href="#">javascript</a>
+        </li>
+    </ul>
+</body>
+</html>

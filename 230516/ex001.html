@@ -1,31 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <img
-      src="img/cat.jpg"
-      alt="cat"
-      usemap="#map"
-      style="width: 320px; height: auto"
-    />
-    <map name="map">
-      <area
-        shape="rect"
-        coords="42,41,154,66"
-        href="/01/homepage.php"
-        target="_blank"
-      />
-      <area
-        shape="rect"
-        coords="42,76,152,100"
-        href="/03/html.php"
-        target="_blank"
-      />
-    </map>
-  </body>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>board</title>
+</head>
+<body>
+  <form action="">
+    <p>
+      <label for="title">글제목</label> <br>
+      <input type="text" id="title" placeholder="제목을 입력하세요.">
+    </p>
+    <p>
+      <label for="content">글내용</label> <br>
+      <textarea name="" id="content" cols="23" rows="10" placeholder="내용을 입력하세요."></textarea>
+    </p>
+    <input type="submit" value="보내기">
+  </form>
+
+  
+</body>
 </html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>text align</title>
+    <style>
+     .box {
+        width: 300px;
+        height: auto;
+        padding: 16px;
+        margin: 40px;
+        background: #eee;
+     }
+        .box p:first-child {
+            text-align: left;
+        }
+        .box p:nth-child(3) {
+            text-align: right;
+        }
+        .box p:last-child {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <h2>
+        nth-child를 이용하여 <br> 정렬해 주세요.
+    </h2>
+    <!-- 왼쪽정렬 -->
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nobis debitis aliquam quam voluptas hic itaque molestias distinctio sequi omnis.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nobis debitis aliquam quam voluptas hic itaque molestias distinctio sequi omnis.
+    </p>
+    <!-- 오른쪽정렬 -->
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nobis debitis aliquam quam voluptas hic itaque molestias distinctio sequi omnis.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nobis debitis aliquam quam voluptas hic itaque molestias distinctio sequi omnis.
+    </p>
+    <!-- 가운데 정렬 -->
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nobis debitis aliquam quam voluptas hic itaque molestias distinctio sequi omnis.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nobis debitis aliquam quam voluptas hic itaque molestias distinctio sequi omnis.
+    </p>
+</div>
+     
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>인접 선택자 / 형제 선택자</title>
+    <style>
+    
+    .box1 h1 ~ h2,
+    .box1 h1 ~ h3,
+    .box1 h1 ~ h4
+     {
+        border: 1px solid red;
+    }
+    .box2 h2 + h3 {
+        border: 1px solid red;
+    }
+    </style>
+</head>
+<body>
+   <div class="box1">
+    <h1>photoshop</h1>
+    <h2>photoshop</h2>
+    <h3>photoshop</h3>
+    <h4>photoshop</h4>
+   </div>
+   <div class="box2">
+    <h1>photoshop</h1>
+    <h2>photoshop</h2>
+    <h3>photoshop</h3>
+    <h4>photoshop</h4>
+   </div>
+   
+</body>
+</html>

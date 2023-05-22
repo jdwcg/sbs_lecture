@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS select</title>
+    <style>
+     ul li ul li:nth-child(3)  {
+        border: 1px solid red;
+     }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <a href="#">HTML</a>
+        </li>
+        <li>
+            <a href="#" class="foo">CSS</a>
+            <ul>
+                <li>item1</li>
+                <li>item2</li>
+                <li>item3</li>
+                <li>item4</li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">javascript</a>
+        </li>
+    </ul>
+</body>
+</html>
