@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>가상요소</title>
+    <style>
+      .foo {
+        width: 300px;
+        position: relative;
+      }
+      .avatar {
+        width: 300px;
+      }
+      .check {
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 90px;
+        background: white;
+        border-radius: 50%;
+        border: 10px solid silver;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="foo">
+      <img class="avatar" src="img/person-circle.svg" alt="person-circle.svg">
+      <img class="check" src="img/check.svg" alt="check.svg">
+    </div>
+  </body>
+</html>
