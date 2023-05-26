@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>input css</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        margin: 20px;
+      }
+      .txt {
+        border: 1px solid #aaa;
+        border-radius: 4px;
+        height: 30px;
+      }
+      .txt:focus {
+        outline: 3px solid #ddd;
+        border: 2px solid #888;
+        padding-left: 10px;
+        box-shadow: inset 4px 4px 4px rgba(100, 100, 100, 0.4);
+      }
+      #chk:checked + label svg {
+        fill: red;
+      }
+      .checkbox_wrap {
+        position: relative;
+      }
+      #chk {
+        width: 20px;
+        height: 20px;
+        display: none;
+      }
+      label {
+        border: 2px solid red;
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+        width: 20px;
+        height: 20px;
+        border-radius: 5px;
+      }
+      svg {
+        float: left;
+      }
+
+      label[for="item1"],
+      label[for="item2"] {
+        border: 2px solid blue;
+        border-radius: 50%;
+      }
+
+      #item1,
+      #item2 {
+        display: none;
+      }
+      #item1:checked + label svg,
+      #item2:checked + label svg {
+        fill: blue;
+      }
+
+      /* 탭 기능 */
+      #tab1:checked + label,
+      #tab2:checked + label,
+      #tab3:checked + label {
+        background: dodgerblue;
+      }
+
+      .content {
+        display: none;
+      }
+      #tab1:checked ~ .contents .content:nth-child(1),
+      #tab2:checked ~ .contents .content:nth-child(2),
+      #tab3:checked ~ .contents .content:nth-child(3) {
+        display: block;
+      }
+
+      /* 탭 디자인 */
+      #tab1,
+      #tab2,
+      #tab3 {
+        display: none;
+      }
+      .tabBtn {
+        width: 100px;
+        height: 40px;
+        border: none;
+        background: #eee;
+        text-align: center;
+        padding-top: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 체크박스 -->
+    <input class="txt" type="text" name="" id="" />
+    <hr />
+    <input type="checkbox" id="chk" />
+    <label for="chk">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        fill="transparent"
+        class="bi bi-check-square-fill"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"
+        />
+      </svg>
+    </label>
+    <hr />
+    <!-- 라디오박스1 -->
+    <input type="radio" name="radio" id="item1" checked />
+    <label for="item1">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        fill="transparent"
+        class="bi bi-check-circle-fill"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+        />
+      </svg>
+    </label>
+    <input type="radio" name="radio" id="item2" />
+    <label for="item2">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        fill="transparent"
+        class="bi bi-check-circle-fill"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+        />
+      </svg>
+    </label>
+    <hr />
+    <input type="radio" name="tabs" id="tab1" checked />
+    <label class="tabBtn" for="tab1">tab1</label>
+    <input type="radio" name="tabs" id="tab2" />
+    <label class="tabBtn" for="tab2">tab2</label>
+    <input type="radio" name="tabs" id="tab3" />
+    <label class="tabBtn" for="tab3">tab3</label>
+    <div class="contents">
+      <div class="content">content1</div>
+      <div class="content">content2</div>
+      <div class="content">content3</div>
+    </div>
+  </body>
+</html>
