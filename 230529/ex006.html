@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>transform</title>
+    <style>
+      body {
+        margin: 100px;
+      }
+      .box_wrap {
+        border: 3px dashed silver;
+        width: 200px;
+        height: 200px;
+        position: relative;
+      }
+      .box1 {
+        width: 200px;
+        height: 4px;
+        background: blue;
+        position: absolute;
+        top: 20px;
+      }
+      .box2 {
+        width: 200px;
+        height: 4px;
+        background: blue;
+        position: absolute;
+        bottom: 20px;
+      }
+      .box3 {
+        width: 200px;
+        height: 4px;
+        background: blue;
+        position: absolute;
+        top: 50%;
+        transition: 0.3s ease;
+        opacity: 1;
+      }
+      .box_wrap:hover .box3 {
+        opacity: 0;
+      }
+
+      .box_wrap:hover .box1 {
+        transform-origin: top right;
+        transform: translate(-26px, 26px) rotate(-45deg);
+        position: absolute;
+        right: 0;
+        top: 0;
+        transition: 0.4s ease;
+      }
+      .box_wrap:hover .box2 {
+        transform-origin: top right;
+        transform: translate(-26px, -26px) rotate(45deg);
+        transition: 0.4s ease;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box_wrap">
+      <div class="box1"></div>
+      <div class="box2"></div>
+      <div class="box3"></div>
+    </div>
+  </body>
+</html>
