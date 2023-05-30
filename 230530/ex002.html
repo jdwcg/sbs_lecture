@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ex</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      header {
+        width: 100%;
+        background: #333;
+        height: 50px;
+        position: relative;
+      }
+      header div a {
+        color: white;
+        line-height: 50px;
+        text-decoration: none;
+        padding: 0 24px;
+        display: inline-block;
+        transition: 0.3s;
+      }
+      header div a:hover {
+        background: #555;
+      }
+      .menu_l {
+        float: left;
+      }
+      .menu_r {
+        float: right;
+      }
+      .logo {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="menu_l">
+        <a href="">About</a>
+        <a href="">Item</a>
+      </div>
+      <div class="logo"><a href="">LOGO</a></div>
+      <div class="menu_r">
+        <a href="">Contact</a>
+        <a href="">Login</a>
+      </div>
+    </header>
+  </body>
+</html>
