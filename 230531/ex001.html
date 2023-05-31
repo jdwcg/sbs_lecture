@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      input[type="text"] {
+        width: 130px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        /* 백그라운드 이미지로 했을경우 */
+        /* background: url("./img/searchicon.png") no-repeat;
+        background-position: 10px 10px; */
+        padding: 12px 20px 12px 40px;
+        transition: width 0.4s ease-in-out;
+        position: absolute;
+        left: 0;
+      }
+      input[type="text"]:focus {
+        width: 100%;
+      }
+      /* 포지션으로 했을경우 */
+      form {
+        position: relative;
+        height: 43px;
+      }
+      img {
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <img src="img/searchicon.png" alt="searchicon" />
+      <input type="text" name="search" placeholder="Search.." />
+    </form>
+  </body>
+</html>
