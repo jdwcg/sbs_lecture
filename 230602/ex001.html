@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  </head>
+  <style>
+    body {
+      margin: 0;
+      background: #080637;
+      font-family: sans-serif;
+    }
+    .wrap {
+      background: white;
+      width: 412px;
+      height: 443px;
+      border-radius: 16px;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .desc {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 284px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .desc h1 {
+      font: 32px;
+      letter-spacing: -2px;
+      text-align: center;
+      margin: 0;
+    }
+    label,
+    input {
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    input {
+      height: 44px;
+      padding: 0 14px;
+      border: 1px solid #dcdce4;
+      border-radius: 4px;
+      transition: 0.3s ease;
+      position: relative;
+    }
+    input:focus {
+      outline: 3px solid #271fe0;
+    }
+
+    .desc label {
+      text-align: left;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      display: inline-block;
+    }
+    .desc label span {
+      float: right;
+      font-weight: 400;
+      color: #271fe0;
+    }
+    .desc p {
+      font-size: 14px;
+      margin: 4px 0;
+    }
+    .input_wrap {
+      position: relative;
+    }
+    .input_wrap::after {
+      font-family: "bootstrap-icons";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 12px;
+      content: "\F33E";
+      font-size: 22px;
+      color: #8e8ea9;
+    }
+    button {
+      height: 44px;
+      width: 100%;
+      border: none;
+      background: #271fe0;
+      color: white;
+      font-size: 14px;
+      font-weight: 600;
+      border-radius: 4px;
+    }
+  </style>
+  <body>
+    <div class="wrap">
+      <div class="desc">
+        <h1>Login</h1>
+        <div class="input_box">
+          <label for="">id <span>Details</span></label>
+          <div class="input_wrap">
+            <input type="text" placeholder="id" />
+          </div>
+          <p>Description line</p>
+        </div>
+        <div class="input_box">
+          <label for="">password <span>Details</span></label>
+          <div class="input_wrap">
+            <input type="password" placeholder="password" />
+          </div>
+          <p>Description line</p>
+        </div>
+        <button>Login</button>
+      </div>
+    </div>
+  </body>
+</html>
