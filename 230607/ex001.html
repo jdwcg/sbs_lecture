@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>반응형웹</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      .contain {
+        max-width: 768px;
+        margin: 0 auto;
+      }
+      header {
+        border-bottom: 1px solid silver;
+        height: 50px;
+      }
+      .logo {
+        float: left;
+        line-height: 50px;
+      }
+      nav {
+        float: right;
+        line-height: 50px;
+      }
+      nav a {
+        padding: 0 14px;
+      }
+      .row {
+        width: 100%;
+      }
+      .col {
+        width: 33.33%;
+        float: left;
+      }
+
+      @media (max-width: 460px) {
+        .col {
+          width: 50%;
+        }
+        header {
+          background: orange;
+        }
+        nav {
+          display: none;
+        }
+        .logo {
+          width: 100%;
+          text-align: center;
+        }
+      }
+      @media (max-width: 360px) {
+        .col {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="contain">
+      <header>
+        <div class="logo">LOGO</div>
+        <nav>
+          <a href="#">item1</a>
+          <a href="#">item2</a>
+          <a href="#">item3</a>
+        </nav>
+      </header>
+      <div class="row">
+        <div class="col">
+          <h1>title</h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, necessitatibus.</p>
+        </div>
+        <div class="col">
+          <h1>title</h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, necessitatibus.</p>
+        </div>
+        <div class="col">
+          <h1>title</h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, necessitatibus.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

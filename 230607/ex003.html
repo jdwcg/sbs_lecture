@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>모바일퍼스트</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      .contain {
+        min-width: 360px;
+        margin: 0 auto;
+      }
+      nav {
+        display: none;
+      }
+      header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: darkorange;
+        height: 50px;
+        color: white;
+        font-weight: 600;
+      }
+      @media (min-width: 460px) {
+        .row {
+          display: flex;
+        }
+        nav {
+          display: block;
+        }
+        header {
+          justify-content: space-between;
+          background: white;
+          border-bottom: 1px solid #000;
+        }
+        .logo {
+          color: black;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="contain">
+      <header>
+        <div class="logo">LOGO</div>
+        <nav>
+          <a href="#">item1</a>
+          <a href="#">item2</a>
+          <a href="#">item3</a>
+        </nav>
+      </header>
+      <div class="row">
+        <div class="col">
+          <h1>title</h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, necessitatibus.</p>
+        </div>
+        <div class="col">
+          <h1>title</h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, necessitatibus.</p>
+        </div>
+        <div class="col">
+          <h1>title</h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, necessitatibus.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

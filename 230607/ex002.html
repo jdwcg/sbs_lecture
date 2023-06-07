@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>반응형웹</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      .contain {
+        max-width: 768px;
+        margin: 0 auto;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        border-bottom: 1px solid #000;
+      }
+      nav {
+        display: flex;
+        gap: 24px;
+      }
+      .row {
+        display: flex;
+        gap: 16px;
+      }
+      @media (max-width: 460px) {
+        .row {
+          flex-wrap: wrap;
+        }
+        .col:nth-child(1) {
+          flex: 0.5;
+        }
+        .col:nth-child(2) {
+          flex: 1;
+        }
+        .col:nth-child(3) {
+          flex: 0.5;
+        }
+        nav {
+          display: none;
+        }
+        header {
+          display: flex;
+          justify-content: center;
+          background: darkorange;
+        }
+      }
+      @media (max-width: 360px) {
+        .col {
+          flex: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="contain">
+      <header>
+        <div class="logo">LOGO</div>
+        <nav>
+          <a href="#">item1</a>
+          <a href="#">item2</a>
+          <a href="#">item3</a>
+        </nav>
+      </header>
+      <div class="row">
+        <div class="col">
+          <h1>title</h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, necessitatibus.</p>
+        </div>
+        <div class="col">
+          <h1>title</h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, necessitatibus.</p>
+        </div>
+        <div class="col">
+          <h1>title</h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, necessitatibus.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
