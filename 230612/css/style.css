@@ -1,0 +1,114 @@
+@charset 'utf-8';
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background: #eee;
+}
+li {
+  list-style: none;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.tit_hd {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  background: white;
+  text-align: center;
+  gap: 14px;
+}
+.tit_hd h1 {
+  font-size: 48px;
+}
+.tit_hd p {
+  font-size: 24px;
+}
+nav {
+  height: 50px;
+  background: #666;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+}
+nav a {
+  color: white;
+}
+nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+nav > a {
+  background: orange;
+  line-height: 50px;
+  padding: 0 20px;
+}
+.wrap {
+  display: flex;
+  gap: 20px;
+}
+
+main {
+  flex: 1;
+}
+aside {
+  flex: 0.4;
+}
+
+@media (max-width: 640px) {
+  .wrap {
+    flex-wrap: wrap;
+  }
+  main,
+  aside {
+    flex: 100%;
+  }
+}
+article {
+  padding: 20px;
+  background: white;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.left .content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.left .content .left_tit {
+}
+.left .content .left_tit h2 {
+}
+.left .content .left_tit p {
+}
+.left .content .imgwrap {
+  height: 300px;
+  background: #ddd;
+}
+
+aside .imgwrap2 {
+  height: 100px;
+  background: #ccc;
+}
+.ft {
+  background: white;
+  padding: 20px;
+  text-align: center;
+}
