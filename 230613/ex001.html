@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ex</title>
+    <style>
+      *,
+      ul {
+        margin: 0;
+        padding: 0;
+      }
+      li {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+      }
+      nav ul {
+        display: flex;
+      }
+      nav ul li {
+        display: block;
+        background: #eee;
+        min-width: 80px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+      }
+      nav ul li:hover {
+        background: #e8e8e8;
+      }
+      nav ul li ul {
+        display: flex;
+        flex-direction: column;
+      }
+      nav ul li ul li {
+        min-width: 80px;
+        height: 0;
+        line-height: 0;
+        opacity: 0;
+        padding: 0 14px;
+        text-align: center;
+        background: #ddd;
+        transition: 0.3s;
+        overflow: hidden;
+        font-size: 0;
+      }
+      nav ul li:hover ul li {
+        height: 50px;
+        line-height: 50px;
+        opacity: 1;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="#">Global_1</a>
+          <ul>
+            <li><a href="#">local_1</a></li>
+            <li><a href="#">local_2</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Global_2</a>
+          <ul>
+            <li><a href="#">local_1</a></li>
+            <li><a href="#">local_2</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Global_3</a>
+          <ul>
+            <li><a href="#">local_1</a></li>
+            <li><a href="#">local_2</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>

@@ -28,12 +28,20 @@ li {
   background: white;
   text-align: center;
   gap: 14px;
-}
-.tit_hd h1 {
   font-size: 48px;
 }
+.tit_hd h1 {
+  font-size: 1em;
+  transition: 0.3s;
+}
 .tit_hd p {
-  font-size: 24px;
+  font-size: 0.5em;
+  transition: 0.3s;
+}
+@media (max-width: 640px) {
+  .tit_hd {
+    font-size: 32px;
+  }
 }
 nav {
   height: 50px;
@@ -81,7 +89,6 @@ article {
   padding: 20px;
   background: white;
 }
-
 .left {
   display: flex;
   flex-direction: column;
@@ -92,20 +99,54 @@ article {
   flex-direction: column;
   gap: 20px;
 }
-.left .content .left_tit {
+
+.left_tit {
+  font-size: 24px;
 }
-.left .content .left_tit h2 {
+.left_tit h2 {
+  font-size: 1em;
+  transition: 0.3s;
 }
-.left .content .left_tit p {
+.left_tit p {
+  font-size: 0.667em;
+  transition: 0.3s;
 }
+@media (max-width: 640px) {
+  .left_tit {
+    font-size: 20px;
+  }
+}
+
+.left_ft {
+  font-size: 24px;
+}
+.left_ft h3 {
+  font-size: 1em;
+  transition: 0.3s;
+}
+.left_ft p {
+  font-size: 0.667em;
+  transition: 0.3s;
+}
+@media (max-width: 640px) {
+  .left_ft {
+    font-size: 20px;
+  }
+}
+
 .left .content .imgwrap {
-  height: 300px;
-  background: #ddd;
+  width: 100%;
+  height: 0;
+  padding-top: calc(100 / 200 * 100%);
+  background: url("https://picsum.photos/850/400");
 }
 
 aside .imgwrap2 {
-  height: 100px;
+  width: 100%;
+  height: 0;
+  padding-top: calc(100 / 200 * 100%);
   background: #ccc;
+  background: url("https://picsum.photos/id/257/200/300");
 }
 .ft {
   background: white;
