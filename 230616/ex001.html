@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ex</title>
+    <style>
+      ul,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      li {
+        list-style: none;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      a {
+        text-decoration: none;
+      }
+      .wrap {
+        border: 1px solid tan;
+      }
+      .container {
+        width: 1200px;
+      }
+      .all,
+      .wrap {
+        width: 100%;
+      }
+      header {
+        width: 100%;
+        height: 50px;
+        background: #333;
+      }
+      header a {
+        color: white;
+      }
+      nav {
+        width: 1200px;
+        margin: 0 auto;
+      }
+      nav > ul {
+        border: 1px solid red;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+      }
+      .banner {
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #333;
+      }
+      .banner h1 {
+        font-size: 82px;
+        color: white;
+      }
+      .slider {
+        display: flex;
+        gap: 16px;
+      }
+      .slide {
+        flex: 1;
+      }
+      .slide h2 {
+        font-size: 20px;
+        text-align: center;
+      }
+      .img_box {
+        background: tan;
+        height: 350px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="all">
+      <header>
+        <nav>
+          <ul>
+            <li><a href="#">BRNAD IDENTITY</a></li>
+            <li><a href="">LEIBAL</a></li>
+            <li><a href="">MEMBER</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section class="banner wrap">
+        <h1>LEIBAL</h1>
+      </section>
+      <section class="slider">
+        <div class="slide">
+          <h2>ARCHITECTIURE</h2>
+          <div class="img_box">1</div>
+        </div>
+        <div class="slide">
+          <h2>INTERIOR</h2>
+          <div class="img_box">1</div>
+        </div>
+        <div class="slide">
+          <h2>FURNITURE</h2>
+          <div class="img_box">1</div>
+        </div>
+        <div class="slide">
+          <h2>PRODUCTS</h2>
+          <div class="img_box">1</div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

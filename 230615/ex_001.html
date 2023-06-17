@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>반응형test</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background: #eee;
+      }
+      a {
+        text-decoration: none;
+      }
+      li {
+        list-style: none;
+      }
+      .container {
+        width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        background: black;
+        border: 1px solid red;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+        position: relative;
+      }
+
+      nav a {
+        color: white;
+      }
+      nav ul {
+        display: flex;
+        gap: 300px;
+      }
+      .title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        text-align: center;
+        font-size: 48px;
+        height: 300px;
+      }
+      .wrap {
+        height: 100%;
+      }
+      .mt {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+      }
+      .mt a {
+        color: white;
+      }
+      .mt ul {
+        display: flex;
+        gap: 200px;
+      }
+      .img {
+        width: 1200px;
+        margin: 0 auto;
+      }
+      .imgwrap {
+        float: left;
+        width: 288px;
+        height: 300px;
+        background: url("https://picsum.photos/id/257/200/300");
+        margin-bottom: 10px;
+      }
+      .imgwrap:not(:last-child) {
+        margin-right: 16px;
+      }
+      .foo {
+        height: 1000px;
+        background: #fffbf0;
+      }
+      .foo1 {
+        display: flex;
+        font-size: 24px;
+        left: 50px;
+      }
+      .foo .foo1 .box {
+        width: 600px;
+        height: 300px;
+      }
+      .foo .foo1 .box1 {
+        width: 600px;
+        height: 300px;
+        position: relative;
+      }
+      .foo .foo1 .box1 h3 {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      .foo2 {
+        display: flex;
+        width: 100%;
+        height: 700px;
+        background: center / cover url("https://picsum.photos/id/257/600/700");
+        transform: translate(50%);
+      }
+      .box2 {
+        flex: 1;
+      }
+      .box3 {
+        flex: 1;
+      }
+      .imgwp {
+        /* width: 100%;
+        height: 700px;
+        background: center/cover url("https://picsum.photos/id/257/600/700"); */
+      }
+      .wrap {
+        width: 100%;
+        background: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="wrap">
+      <article class="container">
+        <nav>
+          <ul>
+            <li>
+              <a href="#">BRAND IDENTITY<br />WEB DESIGN CONCEPT</a>
+            </li>
+            <li><a href="#">LEIBALCOM</a></li>
+            <li><a href="#">NOVEMBER 2020</a></li>
+          </ul>
+        </nav>
+        <div class="title">
+          <h1>LEIBAL</h1>
+        </div>
+        <div class="wrap">
+          <div class="mt">
+            <ul>
+              <li><a href="#">ARCIITECTURE</a></li>
+              <li><a href="#">INTERIOR</a></li>
+              <li><a href="#">FURNITURE </a></li>
+              <li><a href="#">PRODUCTS</a></li>
+            </ul>
+          </div>
+          <div class="img">
+            <div class="imgwrap"></div>
+            <div class="imgwrap"></div>
+            <div class="imgwrap"></div>
+            <div class="imgwrap"></div>
+          </div>
+        </div>
+      </article>
+    </section>
+    <div class="foo">
+      <div class="foo1">
+        <div class="box"></div>
+        <div class="box1">
+          <h3>MINIMAL<br />DESIGN<br />PUBLICATION.</h3>
+        </div>
+      </div>
+      <div class="foo2">
+        <div class="box2">
+          <h3 style="color: orange">ABOUT LEIBAL</h3>
+          <!-- <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem officia aliquam, ut mollitia earum laudantium
+            eaque possimus. Aliquid, repellendus eos! Accusantium, consequatur totam nihil cupiditate aspernatur
+            suscipit maiores quisquam laborum voluptates ullam, omnis ipsa aut laudantium molestias unde eum cumque
+            molestiae obcaecati. Reprehenderit, doloribus perferendis. Sequi eveniet beatae excepturi architecto facere
+            quibusdam accusantium distinctio minus corporis expedita recusandae sunt veniam enim ipsa animi, quis
+            doloribus soluta fugiat ipsum placeat sit laborum? Animi nostrum eum culpa soluta enim harum numquam
+            recusandae minima corporis reprehenderit. Quis nemo tempora velit repudiandae natus? Iusto error at tempora
+            quisquam fuga? Optio cum impedit atque soluta.
+          </p> -->
+        </div>
+        <div class="box3">
+          <div class="imgwp"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
