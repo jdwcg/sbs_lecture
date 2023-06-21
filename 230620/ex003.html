@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ex</title>
+    <style>
+      .box {
+        width: 300px;
+        height: 200px;
+        background: url("https://picsum.photos/300/200");
+        position: relative;
+      }
+      .box:hover::after {
+        transition: opacity 1s ease-in-out;
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: 10px;
+        animation: jdwcg 0.5s linear 0.1s 1 alternate forwards;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+      }
+      @keyframes jdwcg {
+        from {
+          content: "";
+
+          opacity: 0;
+        }
+        to {
+          content: "Fade";
+          background: white;
+          opacity: 0.5;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>

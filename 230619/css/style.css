@@ -70,12 +70,12 @@ nav > ul {
     flex-wrap: wrap;
     justify-content: space-around;
     gap: inherit;
-    padding: 30px;
+    padding: 16px;
   }
   .slide {
     flex: inherit;
     width: 50%;
-    padding: 0 4px;
+    padding: 0 6px;
   }
 }
 
@@ -99,12 +99,10 @@ nav > ul {
   background: center/cover url("https://picsum.photos/400") no-repeat;
 }
 .slider .slide:nth-child(2) .img_box {
-  background: center/cover url("https://picsum.photos/seed/picsum/500/300")
-    no-repeat;
+  background: center/cover url("https://picsum.photos/seed/picsum/500/300") no-repeat;
 }
 .slider .slide:nth-child(3) .img_box {
-  background: center/cover url("https://picsum.photos/500/300?grayscale")
-    no-repeat;
+  background: center/cover url("https://picsum.photos/500/300?grayscale") no-repeat;
 }
 .slider .slide:nth-child(4) .img_box {
   background: center/cover url("https://picsum.photos/500") no-repeat;
