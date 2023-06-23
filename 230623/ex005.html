@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body > div {
+        float: left;
+        text-align: center;
+        margin: 10px;
+        align-items: center;
+      }
+      .box_img {
+        width: 300px;
+        height: 200px;
+        background: center / 100% 100% url(https://picsum.photos/id/201/900/500);
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+      a {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid red;
+      }
+      .box_1:hover {
+        width: 90%;
+        height: 90%;
+        background: #eee;
+        opacity: 0.5;
+        font-size: 20px;
+        text-decoration: none;
+        color: black;
+        transition: 0.5s;
+      }
+      .box_2:hover {
+        width: 100%;
+        height: 180px;
+        transition: 0.5s;
+        transform: translate(0, 50%);
+
+        background: #eee;
+        opacity: 0.5;
+        font-size: 20px;
+        text-decoration: none;
+        color: black;
+      }
+      .plus {
+        opacity: 1;
+      }
+      .box_3:hover {
+        width: 300px;
+        height: 200px;
+        background: #000000;
+        opacity: 0.5;
+        transition: 0.5s;
+      }
+      .box_3:hover .plus {
+        opacity: 1;
+        color: red;
+        font-size: 50px;
+      }
+      .box_4:hover {
+        width: 300px;
+        height: 200px;
+        background: center / 100% 100% url(https://picsum.photos/id/188/900/500);
+        text-align: center;
+        transition: 0.5s;
+      }
+
+      .box_5_wrap {
+        width: 300px;
+        height: 200px;
+        background: center/cover url(https://picsum.photos/id/201/1000/800);
+        text-align: center;
+        transition: 0.5s;
+      }
+      .box_5_wrap:hover {
+        background-size: 110%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="box_img">
+        <a class="box_1">Fade</a>
+      </div>
+      <p>Fade</p>
+    </div>
+    <div class="box">
+      <div class="box_img">
+        <a class="box_2">Bottom</a>
+      </div>
+      <p>Bottom</p>
+    </div>
+    <div class="box">
+      <div class="box_img">
+        <a class="box_3">icon <span class="plus">+</span></a>
+      </div>
+      <p>icon</p>
+    </div>
+    <div class="box">
+      <div class="box_img">
+        <a class="box_4">Bottom</a>
+      </div>
+      <p>Bottom</p>
+    </div>
+    <div class="box">
+      <div class="box_img box_5_wrap">
+        <a class="box_5">Scale Up Image</a>
+      </div>
+      <p>Scale Up Image</p>
+    </div>
+  </body>
+</html>
