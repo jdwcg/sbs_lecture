@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ex</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      .wrapper {
+        width: 100%;
+      }
+      .container {
+        width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+      }
+      header,
+      section,
+      aside,
+      article,
+      footer {
+        border: 1px solid #ddd;
+      }
+      header {
+        grid-column: 1 / 4;
+        height: 100px;
+      }
+      aside {
+        height: 500px;
+      }
+      article {
+        grid-column: 2 /4;
+      }
+      article .boxes {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        text-align: center;
+        gap: 10px;
+        height: 50%;
+      }
+      .box {
+        background: #eee;
+      }
+      footer {
+        grid-column: 1 /4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <header>Header</header>
+        <aside>Aside</aside>
+        <article>
+          <div class="boxes">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+          </div>
+        </article>
+        <footer>Footer</footer>
+      </div>
+    </div>
+  </body>
+</html>

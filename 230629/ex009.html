@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        border: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background: linear-gradient(125deg, #ccf1ff, #dff7ff);
+      }
+      .container {
+        display: grid;
+        margin: 20px;
+        gap: 20px;
+      }
+      .box {
+        grid-template-columns: 3, 1fr;
+        background: #58c4c4;
+        color: #fff;
+        height: 100px;
+        text-align: center;
+        line-height: 100px;
+      }
+      .box:nth-child(1) {
+        grid-column: 1/4;
+      }
+      .box:nth-child(2) {
+        background: #61cc7c;
+        box-sizing: border-box;
+        height: 460px;
+        line-height: 460px;
+      }
+      .box:nth-child(3) {
+        height: 100%;
+        grid-column: 2/4;
+        background: #f7a65a;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 20px;
+      }
+      span {
+        color: #fff;
+        grid-row: 2/3;
+        grid-column: 2/3;
+        text-align: center;
+      }
+      .content {
+        background-color: #ffd9b5;
+        grid-row: 3/4;
+      }
+      .content:nth-child(1) {
+        /* grid-row: 3/4; */
+        /* grid-column: 1 / span 1; */
+      }
+      .content:nth-child(2) {
+        /* grid-row: 3/4; */
+        /* grid-column: 2 / span 1; */
+      }
+      .content:nth-child(3) {
+        /* grid-row: 3/4; */
+        /* grid-column: 3 / span 1; */
+      }
+      .box:nth-child(4) {
+        grid-column: 1 / 4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">Header</div>
+      <div class="box">Aside</div>
+      <div class="box">
+        <span>Article</span>
+        <div class="content">Image</div>
+        <div class="content">Image</div>
+        <div class="content">Image</div>
+      </div>
+      <div class="box">Footer</div>
+    </div>
+  </body>
+</html>

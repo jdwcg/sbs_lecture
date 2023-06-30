@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>데이터 속성 & sass 소개</title>
+    <style>
+      div[data-hover="description"] {
+        border: 1px solid red;
+        width: 100px;
+        height: 100px;
+      }
+      .foo {
+        position: relative;
+      }
+      .foo:hover::after {
+        content: attr(data-hover);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: tan;
+      }
+      .foo::before {
+        content: attr(data-num-index);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: tan;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="foo" data-hover="description" data-num-index="hi"></div>
+  </body>
+</html>

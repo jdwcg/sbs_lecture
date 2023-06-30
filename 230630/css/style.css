@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+}
+
+ul {
+  border: 1px solid dodgerblue;
+}
+ul li {
+  color: green;
+}
+
+a {
+  color: #aaa;
+}

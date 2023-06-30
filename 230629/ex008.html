@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>test001</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        gap: 20px;
+      }
+      .box {
+        border: 5px solid #333;
+        height: 100px;
+      }
+      .box:nth-child(1) {
+        grid-column: 1/5;
+      }
+      .box:nth-child(2) {
+        grid-row: 2/6;
+        height: 400px;
+      }
+      .box:nth-child(3) {
+        display: flex;
+        grid-column: 2/5;
+        grid-row: 2/6;
+        height: 400px;
+      }
+      .box:nth-child(3) .img {
+        display: flex;
+        width: 100%;
+      }
+      .img div {
+        margin: 20px;
+        border: 5px solid #333;
+        width: 100%;
+        height: 50%;
+        margin-top: 150px;
+      }
+      .box:nth-child(4) {
+        grid-column: 1/5;
+      }
+      .spanwrap {
+        position: relative;
+      }
+      span {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">Header</div>
+      <div class="box">Aside</div>
+      <div class="box spanwrap">
+        <span>Article</span>
+        <div class="img">
+          <div>Image</div>
+          <div>Image</div>
+          <div>Image</div>
+        </div>
+      </div>
+      <div class="box">Footer</div>
+    </div>
+  </body>
+</html>
