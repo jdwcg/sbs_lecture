@@ -1,0 +1,24 @@
+$main: red;
+$sub: blue;
+
+.wrap {
+  margin: 0;
+  h1 {
+    color: dodgerblue;
+  }
+  ol {
+    li {
+      color: blue;
+      &:nth-child(2) {
+        color: tomato;
+        font-size: 20px;
+      }
+      &:hover:nth-child(3) {
+        color: green;
+      }
+    }
+  }
+  h2 {
+    color: $sub;
+  }
+}

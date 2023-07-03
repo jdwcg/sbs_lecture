@@ -1,0 +1,19 @@
+.wrap {
+  margin: 0;
+}
+.wrap h1 {
+  color: dodgerblue;
+}
+.wrap ol li {
+  color: blue;
+}
+.wrap ol li:nth-child(2) {
+  color: tomato;
+  font-size: 20px;
+}
+.wrap ol li:hover:nth-child(3) {
+  color: green;
+}
+.wrap h2 {
+  color: blue;
+}
