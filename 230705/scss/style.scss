@@ -8,32 +8,43 @@
     border-radius: 5px;
     box-shadow: 0 0 14px rgba($color: #000000, $alpha: 0.1);
   }
+  &:nth-child(3) .profile_area .p_pic {
+    background: url("https://picsum.photos/seed/picsum/40/40");
+  }
+  &:nth-child(4) .profile_area .p_pic {
+    background: url("https://picsum.photos/40/40/?blur");
+  }
+  &:nth-child(5) .profile_area .p_pic {
+    background: url("https://picsum.photos/40/40/?blur=2");
+  }
+  &:nth-child(6) .profile_area .p_pic {
+    background: url("https://picsum.photos/40/40.jpg");
+  }
 }
 $gap20: 20px;
-@mixin flex_col($direction) {
+@mixin flex_set($direction) {
   display: flex;
   flex-direction: $direction;
 }
 .slider {
   .row_box {
-    display: flex;
+    @include flex_set(row);
     gap: $gap20;
     .col_box {
       flex: 1;
-      @include flex_col(column);
       gap: $gap20;
+      @include thumnail;
+      @include flex_set(column);
       > p {
         line-height: 1.4;
       }
-      @include thumnail;
       .profile_area {
-        display: flex;
+        @include flex_set(row);
         gap: $gap20;
         .p_pic {
           border-radius: 50%;
           min-width: 40px;
           height: 40px;
-          background: url("https://picsum.photos/40/40?grayscale");
         }
         .p_desc {
           h3 {
@@ -43,7 +54,7 @@ $gap20: 20px;
       }
     }
     .col_tit {
-      @include flex_col(column);
+      @include flex_set(column);
       gap: $gap20;
       h2 {
         font-size: 30px;
