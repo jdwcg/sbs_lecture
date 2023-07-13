@@ -1,0 +1,7 @@
+논리연산자
+
+|| → or연산자. 하나라도 True면 true
+
+&& → and연산자. false 면 false
+
+! → not 단항연산자 true면 false
